@@ -1,8 +1,12 @@
 import React from 'react'
+import ExampleTranslation from '@/components/ExampleTranslation'
 
 const page = () => {
   return (
-    <div>Home</div>
+    <div className="container mx-auto p-8">
+      <h1 className="text-3xl font-bold mb-8">Home Page</h1>
+      <ExampleTranslation />
+    </div>
   )
 }
 
