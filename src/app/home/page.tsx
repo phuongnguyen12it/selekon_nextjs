@@ -1,5 +1,5 @@
 import React from 'react'
-import ExampleTranslation from '@/components/ExampleTranslation'
+import ExampleTranslation from '@/components/exams/ExampleTranslation'
 
 const page = () => {
   return (
