@@ -32,7 +32,7 @@ const UserList = () => {
 
     return (
         <div className="bg-white p-6 rounded-lg shadow-lg border">
-            <h3 className="text-xl font-bold mb-4">User Management</h3>
+            <h3 className="text-xl font-bold mb-4 dark:text-black">User Management</h3>
             
             {/* Add new user form */}
             <div className="mb-6 p-4 bg-gray-50 rounded">

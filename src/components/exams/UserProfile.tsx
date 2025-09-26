@@ -20,7 +20,7 @@ const UserProfile = () => {
 
     return (
         <div className="bg-white p-6 rounded-lg shadow-lg border">
-            <h3 className="text-xl font-bold mb-4">User Profile</h3>
+            <h3 className="text-xl font-bold mb-4 dark:text-black">User Profile</h3>
             {isLoggedIn && currentUser ? (
              <div className="space-y-3">
                 <div className="flex items-center space-x-3">
@@ -38,10 +38,10 @@ const UserProfile = () => {
              </div>   
             ): (
                 <div className="text-center">
-                    <p className="text-gray-500 mb-4">Not logged in</p>
+                    <p className="text-gray-500 dark:text-black mb-4">Not logged in</p>
                     <button 
                     onClick={handleLogin}
-                    className="px-4 y-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+                    className="px-4 y-2 bg-blue-500 text-white dark:text-black rounded hover:bg-blue-600">
                         Login as John
                     </button>
                 </div>

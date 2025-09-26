@@ -1,0 +1,29 @@
+{
+  "React Function Component (TSX) - Clean": {
+    "prefix": ["rfc"],
+    "body": [
+      "import React from 'react';",
+      "",
+      "const ${TM_FILENAME_BASE} = () => {",
+      "  return (",
+      "    <></>",
+      "  );",
+      "};",
+      "",
+      "export default ${TM_FILENAME_BASE};"
+    ],
+    "description": "React function component with Props and default export"
+  },
+  "Next.js App Page Component (default export)": {
+    "prefix": ["rfcpage"],
+    "body": [
+      "export default function ${1:Page}() {",
+      "  return (",
+      "    <div>${1}</div>",
+      "  );",
+      "}"
+    ],
+    "description": "Next.js App Router page component skeleton"
+  }
+}
+

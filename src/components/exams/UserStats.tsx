@@ -8,7 +8,7 @@ const UserStats = () => {
 
     return (
         <div className="bg-white p-6 rounded-lg shadow-lg border">
-            <h3 className="text-xl font-bold mb-4">User Statistics</h3>
+            <h3 className="text-xl font-bold mb-4 dark:text-black">User Statistics</h3>
 
             <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-4 bg-blue-50 rounded">

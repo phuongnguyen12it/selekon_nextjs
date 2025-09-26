@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import I18nProvider from "@/components/providers/I18nProvider";
 import ReduxProvider from "@/components/providers/ReduxProvider";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import { ThemeProvider } from "next-themes";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,11 @@ function RootLayout({ children }: { children: React.ReactNode }) {
       >
         <ReduxProvider>
           <I18nProvider>
-            {children}
+            <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+              <Header />
+                {children}
+              <Footer />
+            </ThemeProvider>
           </I18nProvider>
         </ReduxProvider>
       </body>
